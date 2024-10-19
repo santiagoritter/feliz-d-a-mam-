@@ -1,0 +1,168 @@
+/* General settings */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+/* Splash screen styles */
+#splash {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+    font-size: 6vw;
+    color: white;
+    z-index: 1000;
+    transition: opacity 1s ease-out;
+}
+
+#splash.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Header styles */
+.contenedor_header {
+    width: 100vw;
+    height: 10vh;
+    background-color: pink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+
+.contenedor_header p {
+    font-family: cursive;
+    font-size: 6vw;
+}
+
+#splash.hidden + header .contenedor_header {
+    opacity: 1;
+}
+
+#inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-top: 10vh;
+}
+
+.contenedor_foto {
+    width: 100vw;
+    height: 45vh;
+}
+
+.contenedor_foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.boton_flecha {
+    font-size: 4vw;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+}
+
+.contenedorflecha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15vw;
+    height: 7vh;
+    background-color: rgb(255, 222, 253);
+    border-radius: 100%;
+    opacity: 70%;
+    margin-top: -20vh;
+}
+.flecha {
+    height: 5vh;
+    width: auto;
+}
+
+
+
+/* Final section */
+#final {
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 223, 228);
+    margin-top: 20vh;
+}
+
+.carta {
+    width: 80vw;
+    height: 80vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10vh;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.carta_cabecera {
+    font-family: cursive;
+    font-size: 6vw;
+}
+
+.carta_cuerpo {
+    font-family: cursive;
+    font-size: 4vw;
+}
+.te_amamos{
+    width: 100vw;
+    height: auto;
+}
+.contenedor2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+}
+.contenedor2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.textof{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vw;
+    background-color: pink;
+    border-radius: 10px;
+}
+
+.textof p{
+    font-family: cursive;
+    font-size: 6vw;
+}
